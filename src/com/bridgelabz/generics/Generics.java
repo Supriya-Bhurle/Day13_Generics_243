@@ -3,24 +3,24 @@ package com.bridgelabz.generics;
 public class Generics {
     public static void main(String[] args) {
 
-        Float number1 = 8.5f;
-        Float number2 = 8.1f;
-        Float number3 = 6.19f;
-        Float maximumNum = testMax(number1,number2,number3);
-        System.out.println("Maximum number is : "+maximumNum);
+        String name1 = "Graphs";
+        String name2 = "Apple";
+        String name3 = "Banana";
+        String maximum = testMax(name1,name2,name3);
+        System.out.println("Maximum length of string is : "+maximum);
     }
 
-    public static float testMax(Float number1, Float number2, Float number3) {
+    public static String testMax(String name1, String name2, String name3) {
 
-        Float maximumNumber = number1;
-        if(number2.compareTo(maximumNumber) > 0 )
+        String maximum= name1;
+        if(name2.compareTo(maximum) > 0 )
         {
-            maximumNumber = number2;
+            maximum = name2;
         }
-        if(number3.compareTo(maximumNumber) > 0 )
+        if(name3.compareTo(maximum) > 0 )
         {
-            maximumNumber = number3;
+            maximum = name3;
         }
-        return maximumNumber;
+        return maximum;
     }
 }
